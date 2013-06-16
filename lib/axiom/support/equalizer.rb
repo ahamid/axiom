@@ -13,7 +13,7 @@ module Axiom
     def initialize(*)
       super
       module_eval do
-        include Adamantium::Flat
+        include Adamantium
         memoize :hash
       end
     end
