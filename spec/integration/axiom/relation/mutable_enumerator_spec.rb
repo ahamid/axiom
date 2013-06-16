@@ -9,8 +9,8 @@ class MutableEnumerator < Enumerator
   def initialize(tuple_source)
     @mutable_array = []
     super() do |y|
-      @mutable_array << Date.new
       tuple_source.each do |t|
+        @mutable_array << Date.new
         y << t
       end
     end
